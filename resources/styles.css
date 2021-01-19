@@ -1,0 +1,308 @@
+html {
+  font-family: "Julius Sans One", Sans-Serif;
+  font-size: 12px;
+}
+
+body {
+  background-color: #fff0f0;
+  text-align: center;
+}
+section {
+  padding: 4rem 0;
+}
+h1 {
+  font-size: 3.7rem;
+  padding-top: 22rem;
+  text-align: center;
+  color: #f44647;
+  font-family: Lobster, serif;
+  margin-block-start: 0;
+}
+
+@media only screen and (min-width: 630px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Banner section */
+
+.banner {
+  background-color: #f44647;
+  padding: 0.3rem;
+}
+.banner ul {
+  text-align: center;
+  padding-inline-start: unset;
+}
+.banner li {
+  display: block;
+  padding: 0.5rem;
+  color: #fff0f0;
+}
+
+@media only screen and (min-width: 400px) {
+  .banner ul {
+    margin-block-end: 0.1rem;
+    margin-block-start: 0.1rem;
+  }
+
+  .banner li {
+    display: inline;
+    padding: 0 3rem;
+  }
+}
+
+/* Hero section */
+
+.main {
+  height: auto;
+}
+
+.image-container {
+  height: 60rem;
+  background: url("./dylan-gillis-YJdCZba0TYE-unsplash.jpg") rgba(0, 0, 0, 0.55);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-bottom: 2rem;
+}
+
+.introduction {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .introduction {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+/* Team section */
+
+.gallery {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90%;
+}
+
+.gallery-member-holder {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin: 2px;
+
+  position: relative;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #f44647;
+}
+.gallery-member-holder:hover .overlay {
+  opacity: 1;
+}
+.gallery-text-wrapper {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 550px) {
+  .gallery-member-holder {
+    width: 190px;
+    height: 190px;
+    margin: 4px;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .gallery-member-holder {
+    width: 235px;
+    height: 235px;
+    margin: 7px;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .gallery {
+    width: 80%;
+  }
+  .gallery-member-holder {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media only screen and (min-width: 1520px) {
+  .gallery {
+    width: 65%;
+  }
+  .gallery-member-holder {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Schedule section */
+
+.column {
+  background-color: #fff6d6;
+  box-shadow: 0 8px 6px -6px black;
+}
+.day {
+  font-family: "Permanent Marker", Cursive;
+  font-size: 1.2rem;
+  color: #f44647;
+}
+.class {
+  padding: 1px 0;
+  margin: 20px 10px;
+  background-color: #ffe9c9;
+  box-shadow: 0 8px 6px -6px black;
+  font-size: 0.8rem;
+}
+
+#events {
+  background-color: #f44647;
+  padding: 4rem 1rem;
+}
+#events h2 {
+  color: #fff0f0;
+}
+
+.schedule {
+  margin: 50px auto;
+  width: 90%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-gap: 20px 6px;
+  justify-content: center;
+}
+
+.column {
+  background-color: #fff6d6;
+  box-shadow: 0 8px 6px -6px black;
+}
+.day {
+  font-family: "Permanent Marker", Cursive;
+  font-size: 1.2rem;
+  color: #f44647;
+}
+.class {
+  padding: 1px 1px;
+  margin: 20px 6px;
+  background-color: #ffe9c9;
+  box-shadow: 0 8px 6px -6px black;
+  font-size: 0.8rem;
+}
+@media only screen and (min-width: 525px) {
+  .schedule {
+    margin: 50px auto;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    grid-gap: 3px;
+    justify-content: center;
+  }
+
+  .class {
+    padding: 1px 1px;
+    margin: 20px 6px;
+    background-color: #ffe9c9;
+    box-shadow: 0 8px 6px -6px black;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 750px) {
+  #events {
+    padding: 4rem 2rem;
+  }
+  .schedule {
+    grid-gap: 6px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .schedule {
+    grid-gap: 12px;
+    width: 90%;
+  }
+  .class {
+    margin: 20px 15px;
+  }
+}
+
+/* Location section */
+
+.address {
+  padding: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.map {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+}
+.map img {
+  width: 90%;
+}
+.location {
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 710px) {
+  .address {
+    padding: 1rem 3rem;
+  }
+  .map {
+    padding: 1rem 3rem;
+  }
+}
+
+/* Footer */
+
+footer {
+  font-size: 0.7rem;
+  padding: 1rem;
+  background-color: #f44647;
+  color: #fff0f0;
+  text-align: left;
+}
+
+.author {
+  text-align: right;
+}
